@@ -24,7 +24,7 @@ public class Deletefromcart_definition extends Deletefromcart {
 	}
 
 	@Then("^Delete an item from the cart$")
-	public void delete_an_item_from_the_cart() throws IOException {
+	public void delete_an_item_from_the_cart() throws IOException, InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
 		delete_from_cart();
 		Screenshot();

@@ -77,7 +77,8 @@ public class Deletefromcart {
 		driver.findElement(Addtocart_delete).click();
 	}
 
-	public void Screenshot() throws IOException {
+	public void Screenshot() throws IOException, InterruptedException {
+		Thread.sleep(8000);
 		TakesScreenshot t = (TakesScreenshot) driver;
 		File f = t.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(f, new File("C:\\Users\\hp\\Downloads\\845200_ctsproject\\Screenshots\\Deletefromcart.png"));

@@ -69,7 +69,8 @@ public class Addtocart {
 		act.moveToElement(Addcart).click().build().perform();
 	}
 
-	public void Click_Addtocart() throws IOException {
+	public void Click_Addtocart() throws IOException, InterruptedException {
+		Thread.sleep(8000);
 		TakesScreenshot t = (TakesScreenshot) driver;
 		File f = t.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(f, new File("C:\\Users\\hp\\Downloads\\845200_ctsproject\\Screenshots\\Addtocart.png"));

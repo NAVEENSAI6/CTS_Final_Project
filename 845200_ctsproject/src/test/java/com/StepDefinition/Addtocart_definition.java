@@ -23,7 +23,7 @@ public class Addtocart_definition extends Addtocart {
 	}
 
 	@Then("^Click on Add to cart option$")
-	public void click_on_Add_to_cart_option() throws IOException {
+	public void click_on_Add_to_cart_option() throws IOException, InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
 		Click_Addtocart();
 	}
